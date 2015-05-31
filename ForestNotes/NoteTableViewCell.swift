@@ -11,6 +11,18 @@ import UIKit
 class NoteTableViewCell: UITableViewCell {
 
     @IBOutlet weak var noteTitle: UILabel!
+    @IBOutlet weak var noteText: UILabel!
+    @IBOutlet weak var noteDate: UILabel!
+    
+    weak var note : Note! // '!' means that we not use the varialbe until we set a value ... we will set a value befor using it
+    
+    func setupCell(note : Note) {
+        self.note = note
+        noteTitle.text = note.title
+        noteText.text = note.text
+        noteDate.text = note.dateString
+        
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

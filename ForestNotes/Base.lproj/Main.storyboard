@@ -60,7 +60,10 @@
                                         <constraint firstItem="T3O-R6-uCt" firstAttribute="top" secondItem="58b-fz-aBV" secondAttribute="topMargin" id="a7y-zR-IgC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.85730350378787878" green="0.83458207505730952" blue="0.84735885528852828" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <outlet property="noteDate" destination="T3O-R6-uCt" id="rHC-Lh-96m"/>
+                                    <outlet property="noteText" destination="PLO-NO-eZs" id="iUb-9q-1aI"/>
                                     <outlet property="noteTitle" destination="qq6-xH-ulj" id="7vv-GJ-8du"/>
                                 </connections>
                             </tableViewCell>
