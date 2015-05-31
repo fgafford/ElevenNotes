@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../NoteTableViewCell.swift">
+   </FileRef>
+   <FileRef
       location = "self:ForestNotes.xcodeproj">
    </FileRef>
 </Workspace>

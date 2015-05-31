@@ -14,12 +14,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="notesCell" rowHeight="80" id="1Fl-f6-vg5">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="notesCell" rowHeight="80" id="1Fl-f6-vg5" customClass="NoteTableViewCell" customModule="ForestNotes" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Fl-f6-vg5" id="58b-fz-aBV">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq6-xH-ulj">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq6-xH-ulj">
                                             <rect key="frame" x="8" y="8" width="232" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="iJy-mF-AXN"/>
@@ -28,25 +28,41 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLO-NO-eZs">
-                                            <rect key="frame" x="8" y="58" width="304" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="12/20/2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3O-R6-uCt">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/20/2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3O-R6-uCt">
                                             <rect key="frame" x="248" y="8" width="64" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="5uM-Im-yJm"/>
+                                                <constraint firstAttribute="width" constant="64" id="bUA-9u-Lbc"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.24525697830721294" green="0.33278398608332466" blue="0.89632654671717171" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLO-NO-eZs">
+                                            <rect key="frame" x="8" y="50" width="304" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="9cp-9p-bUe"/>
+                                                <constraint firstAttribute="width" constant="304" id="zUX-6S-N49"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="T3O-R6-uCt" firstAttribute="leading" secondItem="qq6-xH-ulj" secondAttribute="trailing" constant="8" id="BBU-3Q-Yjt"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="PLO-NO-eZs" secondAttribute="bottom" constant="0.5" id="JV9-8j-Qus"/>
                                         <constraint firstItem="qq6-xH-ulj" firstAttribute="leading" secondItem="58b-fz-aBV" secondAttribute="leadingMargin" id="MFL-Za-dEv"/>
+                                        <constraint firstItem="PLO-NO-eZs" firstAttribute="trailing" secondItem="58b-fz-aBV" secondAttribute="trailingMargin" id="Qs8-E5-XfR"/>
                                         <constraint firstItem="qq6-xH-ulj" firstAttribute="top" secondItem="58b-fz-aBV" secondAttribute="topMargin" id="S1h-YS-KKZ"/>
+                                        <constraint firstItem="PLO-NO-eZs" firstAttribute="leading" secondItem="58b-fz-aBV" secondAttribute="leadingMargin" id="TtB-KI-8VP"/>
+                                        <constraint firstItem="T3O-R6-uCt" firstAttribute="trailing" secondItem="58b-fz-aBV" secondAttribute="trailingMargin" id="Xq6-T2-kUL"/>
+                                        <constraint firstItem="T3O-R6-uCt" firstAttribute="top" secondItem="58b-fz-aBV" secondAttribute="topMargin" id="a7y-zR-IgC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="noteTitle" destination="qq6-xH-ulj" id="7vv-GJ-8du"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

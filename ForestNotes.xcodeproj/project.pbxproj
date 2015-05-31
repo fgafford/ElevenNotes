@@ -14,6 +14,7 @@
 		A361FF461B1B4052008A224A /* ForestNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF451B1B4052008A224A /* ForestNotesTests.swift */; };
 		A361FF501B1B4580008A224A /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF4F1B1B4580008A224A /* NotesTableViewController.swift */; };
 		A361FF521B1B4BF6008A224A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF511B1B4BF6008A224A /* Note.swift */; };
+		A361FF581B1B55D4008A224A /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF571B1B55D4008A224A /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A361FF451B1B4052008A224A /* ForestNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestNotesTests.swift; sourceTree = "<group>"; };
 		A361FF4F1B1B4580008A224A /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		A361FF511B1B4BF6008A224A /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A361FF571B1B55D4008A224A /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				A361FF2F1B1B4051008A224A /* AppDelegate.swift */,
 				A361FF331B1B4052008A224A /* Main.storyboard */,
+				A361FF571B1B55D4008A224A /* NoteTableViewCell.swift */,
 				A361FF361B1B4052008A224A /* Images.xcassets */,
 				A361FF381B1B4052008A224A /* LaunchScreen.xib */,
 				A361FF2D1B1B4051008A224A /* Supporting Files */,
@@ -218,6 +221,7 @@
 				A361FF301B1B4051008A224A /* AppDelegate.swift in Sources */,
 				A361FF501B1B4580008A224A /* NotesTableViewController.swift in Sources */,
 				A361FF521B1B4BF6008A224A /* Note.swift in Sources */,
+				A361FF581B1B55D4008A224A /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
