@@ -16,15 +16,7 @@ class NotesTableViewController: UITableViewController {
         super.viewDidLoad()
         
         // =========== ***** ===========
-        var note1 = Note()
-        note1.title = "Note1"
-        note1.text = "This is a note"
-        notes.append(note1)
-        
-        var note2 = Note(title: "note2", text: "This is note 2")
-        notes.append(note2)
-        
-        notes.append(Note(title: "Note3", text: "This is note 3"))
+
         // ============ ***** ==========
         
         
