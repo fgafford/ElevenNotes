@@ -9,17 +9,10 @@
 import UIKit
 
 class NotesTableViewController: UITableViewController {
-
-    var notes = [Note]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // =========== ***** ===========
 
-        // ============ ***** ==========
-        
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -43,15 +36,14 @@ class NotesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return notes.count
+        return NoteStore.sharedInstance.getCount()
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("notesCell", forIndexPath: indexPath) as! NoteTableViewCell
 
-        //cell.textLabel?.text = notes[indexPath.row]
-        cell.setupCell(notes[indexPath.row])
+        cell.setupCell(NoteStore.sharedInstance.getNote(indexPath.row))
         
         return cell
     }
@@ -71,7 +63,8 @@ class NotesTableViewController: UITableViewController {
         if editingStyle == .Delete {
             
             // Delete the row from the data source
-            notes.removeAtIndex(indexPath.row)
+            NoteStore.sharedInstance.deleteNote(indexPath.row)
+            
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -114,10 +107,10 @@ class NotesTableViewController: UITableViewController {
     @IBAction func saveNoteDetail(segue: UIStoryboardSegue)  {
         let noteDetailVC = segue.sourceViewController as! NotesDetailViewController
         if let indexPath = tableView.indexPathForSelectedRow() {
-            notes[indexPath.row] = noteDetailVC.note
+            NoteStore.sharedInstance.updateNote(noteDetailVC.note,index: indexPath.row)
             tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
         } else {
-            notes.append(noteDetailVC.note);
+            NoteStore.sharedInstance.addNote(noteDetailVC.note)
             tableView.reloadData()
         }
 

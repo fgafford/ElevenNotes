@@ -14,7 +14,7 @@ class NoteStore: NSObject {
     private var notes : [Note]!
     
     // this class var allows us to get a handel to this classs
-    class var sharedInstnace : NoteStore {
+    class var sharedInstance : NoteStore {
         return NoteStoreInstance
     }
     
