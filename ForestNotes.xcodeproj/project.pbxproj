@@ -16,6 +16,7 @@
 		A361FF521B1B4BF6008A224A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF511B1B4BF6008A224A /* Note.swift */; };
 		A361FF581B1B55D4008A224A /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF571B1B55D4008A224A /* NoteTableViewCell.swift */; };
 		A361FF5A1B1B7850008A224A /* NotesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF591B1B7850008A224A /* NotesDetailViewController.swift */; };
+		A361FF5C1B1BAFDF008A224A /* NoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF5B1B1BAFDF008A224A /* NoteStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		A361FF511B1B4BF6008A224A /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		A361FF571B1B55D4008A224A /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		A361FF591B1B7850008A224A /* NotesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDetailViewController.swift; sourceTree = "<group>"; };
+		A361FF5B1B1BAFDF008A224A /* NoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				A361FF4F1B1B4580008A224A /* NotesTableViewController.swift */,
 				A361FF381B1B4052008A224A /* LaunchScreen.xib */,
 				A361FF511B1B4BF6008A224A /* Note.swift */,
+				A361FF5B1B1BAFDF008A224A /* NoteStore.swift */,
 				A361FF361B1B4052008A224A /* Images.xcassets */,
 				A361FF2D1B1B4051008A224A /* Supporting Files */,
 			);
@@ -224,6 +227,7 @@
 				A361FF301B1B4051008A224A /* AppDelegate.swift in Sources */,
 				A361FF501B1B4580008A224A /* NotesTableViewController.swift in Sources */,
 				A361FF5A1B1B7850008A224A /* NotesDetailViewController.swift in Sources */,
+				A361FF5C1B1BAFDF008A224A /* NoteStore.swift in Sources */,
 				A361FF521B1B4BF6008A224A /* Note.swift in Sources */,
 				A361FF581B1B55D4008A224A /* NoteTableViewCell.swift in Sources */,
 			);
