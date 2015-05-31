@@ -19,7 +19,8 @@ class NoteStore: NSObject {
     }
     
     override init(){
-        notes = [Note]()
+        super.init()
+        load()
     }
     
     func getNote(index : Int) -> Note {
@@ -62,6 +63,7 @@ class NoteStore: NSObject {
         if fileManager.fileExistsAtPath(filePath) {
             notes = NSKeyedUnarchiver.unarchiveObjectWithFile(filePath) as! [Note]
         } else {
+            
             notes = [Note]()
             
             // some default stuff so user do not feel like they are in a empty room
@@ -74,8 +76,6 @@ class NoteStore: NSObject {
             notes.append(note2)
             
             notes.append(Note(title: "Note3", text: "This is note 3"))
-
         }
     }
-    
 }
