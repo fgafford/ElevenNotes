@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Note: NSObject {
+class Note: NSObject, NSCoding {
     var title = ""
     var text = ""
     var date = NSDate()
@@ -27,6 +27,18 @@ class Note: NSObject {
     init(title: String, text: String) {
         self.title = title
         self.text = text
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        self.title = aDecoder.decodeObjectForKey("title") as! String
+        self.text = aDecoder.decodeObjectForKey("text") as! String
+        self.date = aDecoder.decodeObjectForKey("date") as! NSDate
+    }
+    
+    func encodeWithCoder(aCoder : NSCoder){
+        aCoder.encodeObject(title, forKey: "title")
+        aCoder.encodeObject(text, forKey: "text")
+        aCoder.encodeObject(date, forKey: "date")
     }
     
 }
