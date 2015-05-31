@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A361FF301B1B4051008A224A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF2F1B1B4051008A224A /* AppDelegate.swift */; };
-		A361FF321B1B4052008A224A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF311B1B4052008A224A /* ViewController.swift */; };
 		A361FF351B1B4052008A224A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A361FF331B1B4052008A224A /* Main.storyboard */; };
 		A361FF371B1B4052008A224A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A361FF361B1B4052008A224A /* Images.xcassets */; };
 		A361FF3A1B1B4052008A224A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A361FF381B1B4052008A224A /* LaunchScreen.xib */; };
 		A361FF461B1B4052008A224A /* ForestNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF451B1B4052008A224A /* ForestNotesTests.swift */; };
+		A361FF501B1B4580008A224A /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF4F1B1B4580008A224A /* NotesTableViewController.swift */; };
+		A361FF521B1B4BF6008A224A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A361FF511B1B4BF6008A224A /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		A361FF2A1B1B4051008A224A /* ForestNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForestNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A361FF2E1B1B4051008A224A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A361FF2F1B1B4051008A224A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A361FF311B1B4052008A224A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A361FF341B1B4052008A224A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A361FF361B1B4052008A224A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A361FF391B1B4052008A224A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A361FF3F1B1B4052008A224A /* ForestNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForestNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A361FF441B1B4052008A224A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A361FF451B1B4052008A224A /* ForestNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestNotesTests.swift; sourceTree = "<group>"; };
+		A361FF4F1B1B4580008A224A /* NotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		A361FF511B1B4BF6008A224A /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				A361FF2F1B1B4051008A224A /* AppDelegate.swift */,
-				A361FF311B1B4052008A224A /* ViewController.swift */,
 				A361FF331B1B4052008A224A /* Main.storyboard */,
 				A361FF361B1B4052008A224A /* Images.xcassets */,
 				A361FF381B1B4052008A224A /* LaunchScreen.xib */,
 				A361FF2D1B1B4051008A224A /* Supporting Files */,
+				A361FF4F1B1B4580008A224A /* NotesTableViewController.swift */,
+				A361FF511B1B4BF6008A224A /* Note.swift */,
 			);
 			path = ForestNotes;
 			sourceTree = "<group>";
@@ -212,8 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A361FF321B1B4052008A224A /* ViewController.swift in Sources */,
 				A361FF301B1B4051008A224A /* AppDelegate.swift in Sources */,
+				A361FF501B1B4580008A224A /* NotesTableViewController.swift in Sources */,
+				A361FF521B1B4BF6008A224A /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
