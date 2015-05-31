@@ -19,5 +19,14 @@ class Note: NSObject {
         dateFormatter.dateFormat = "MM/dd/yyyy"
         return dateFormatter.stringFromDate(date)
     }
+
+    override init() {
+        super.init()
+    }
+    
+    init(title: String, text: String) {
+        self.title = title
+        self.text = text
+    }
     
 }
