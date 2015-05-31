@@ -110,9 +110,10 @@ class NotesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "editNoteSegue" {
-                
-        } else {
-        
+                let noteDetailVC = segue.destinationViewController as! NotesDetailViewController
+                let tabelCell = sender as! NoteTableViewCell
+            
+                noteDetailVC.note = tabelCell.note
         }
     }
 

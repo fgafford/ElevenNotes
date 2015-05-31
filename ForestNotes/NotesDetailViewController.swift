@@ -18,6 +18,8 @@ class NotesDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        noteTitle.text = note.title
+        noteText.text = note.text
 
         // Do any additional setup after loading the view.
     }
