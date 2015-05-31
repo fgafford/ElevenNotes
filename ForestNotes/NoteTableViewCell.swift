@@ -22,6 +22,7 @@ class NoteTableViewCell: UITableViewCell {
         noteText.text = note.text
         noteDate.text = note.dateString
         
+        //self.backgroundColor = UIColor.cyanColor()
     }
 
     override func awakeFromNib() {

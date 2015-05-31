@@ -76,7 +76,13 @@
                             <outlet property="delegate" destination="Wv5-9o-n3I" id="rW1-bn-hBv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notes" id="rsi-DG-wUA" userLabel="Notes"/>
+                    <navigationItem key="navigationItem" title="Notes" id="rsi-DG-wUA" userLabel="Notes">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="va0-8N-xu4">
+                            <connections>
+                                <segue destination="JVD-E8-JeG" kind="push" identifier="" id="JRJ-eo-lrs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lc-5t-P1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,7 +119,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vGj-wN-gu4" firstAttribute="trailing" secondItem="06e-Od-JUE" secondAttribute="trailingMargin" id="9cc-0g-SPg"/>
                             <constraint firstItem="vGj-wN-gu4" firstAttribute="top" secondItem="gaC-tK-VAa" secondAttribute="bottom" constant="8" id="D1O-hX-ycj"/>
@@ -123,13 +129,20 @@
                             <constraint firstItem="bq7-I4-Y2A" firstAttribute="trailing" secondItem="06e-Od-JUE" secondAttribute="trailingMargin" id="caJ-GY-0xi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="74w-bp-JaS"/>
+                    <navigationItem key="navigationItem" id="74w-bp-JaS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="iOD-05-5qf">
+                            <connections>
+                                <segue destination="GMZ-gA-0Zy" kind="unwind" unwindAction="saveNoteDetail:" id="aaY-bk-OWt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="noteText" destination="bq7-I4-Y2A" id="aEw-fI-Pu4"/>
                         <outlet property="noteTitle" destination="vGj-wN-gu4" id="ZQC-ml-WFP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVz-Kf-whW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GMZ-gA-0Zy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1406" y="-169"/>
         </scene>
@@ -155,4 +168,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="JRJ-eo-lrs"/>
+    </inferredMetricsTieBreakers>
 </document>

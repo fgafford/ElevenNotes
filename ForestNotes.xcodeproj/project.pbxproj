@@ -83,15 +83,15 @@
 		A361FF2C1B1B4051008A224A /* ForestNotes */ = {
 			isa = PBXGroup;
 			children = (
-				A361FF2F1B1B4051008A224A /* AppDelegate.swift */,
 				A361FF331B1B4052008A224A /* Main.storyboard */,
+				A361FF2F1B1B4051008A224A /* AppDelegate.swift */,
 				A361FF591B1B7850008A224A /* NotesDetailViewController.swift */,
 				A361FF571B1B55D4008A224A /* NoteTableViewCell.swift */,
+				A361FF4F1B1B4580008A224A /* NotesTableViewController.swift */,
 				A361FF361B1B4052008A224A /* Images.xcassets */,
 				A361FF381B1B4052008A224A /* LaunchScreen.xib */,
-				A361FF2D1B1B4051008A224A /* Supporting Files */,
-				A361FF4F1B1B4580008A224A /* NotesTableViewController.swift */,
 				A361FF511B1B4BF6008A224A /* Note.swift */,
+				A361FF2D1B1B4051008A224A /* Supporting Files */,
 			);
 			path = ForestNotes;
 			sourceTree = "<group>";
